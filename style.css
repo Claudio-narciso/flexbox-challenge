@@ -27,6 +27,11 @@
 body {
     font-family: var(--roboto);
     font-size: var(--fs-md);
+    color: var(--neutral-100);
+}
+
+img, .img {
+    max-width: 100%;
 }
 /* ---------------- */
 /* Utility Classes */
@@ -42,6 +47,17 @@ body {
  }
  .bg-ntr-800 {
     background-color: hsl(var(--neutral-800));
+ }
+
+ /* Colors */
+ .clr-primary {
+    color: hsl(var(--primary-color));
+ }
+ .clr-ntr-100 {
+    color: hsl(var(--neutral-100));
+ }
+ .clr-ntr-800 {
+    color: hsl(var(--neutral-800));
  }
 
  /* Font Families */
@@ -64,6 +80,10 @@ body {
 }
 .fs-xl {
     font-size: var(--fs-xl);
+}
+
+.txt--align-center {
+    text-align: center;
 }
 
 .container {
@@ -99,4 +119,35 @@ body {
     color: hsl(var(--primary-color), .7);
     text-transform: uppercase;
     letter-spacing: .3rem;
+}
+
+/* Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.flex-container > * + * {
+    margin-left: 3rem;
+}
+.flex-container > * {
+    width: 50%;
+}
+
+.main {
+    & .section {
+        padding-block: 6rem;
+    }
+
+    & .section__text--title {
+        font-size: var(--fs-lg);
+        font-family: var(--playfair);
+        margin-bottom: 2rem;
+    }
+
+    & .section__text--description {
+        font-size: var(--fs-md);
+        line-height: 1.5;
+        text-align: left;
+    }
 }
