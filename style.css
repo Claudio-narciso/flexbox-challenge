@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Styles */
+    --primary-color: #824936;
+    --neutral-100: #F3EED9;
+    --neutral-800: #222C2A;
+
+
+}
